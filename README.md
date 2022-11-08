@@ -1,0 +1,1 @@
+This is a landing page. I worked on this project as a requirement to complete the Odin Project's Foundations course
