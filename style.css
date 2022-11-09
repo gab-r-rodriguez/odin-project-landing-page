@@ -51,5 +51,11 @@ li {
 }
 
 .image-container {
-    display: flex;
+    display: flex; /*add flex shrink content here*/
+}
+
+.image-and-text {
+    height: auto;
+    width: 200px;   
+    margin: 10px;
 }
