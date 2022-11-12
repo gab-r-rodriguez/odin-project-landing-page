@@ -46,7 +46,7 @@ a {
     align-items: center;
 }
 
-/**/
+/*Style for content 2*/
 
 .content-2 {
     display: flex;
@@ -56,8 +56,10 @@ a {
 }
 
 .image-header {
-    width: 40%;
+    width: auto;
     text-align: center;
+    font-size: 36px;
+    font-weight: bold;
 }
 
 .image-container {
@@ -67,5 +69,10 @@ a {
     flex-direction: row;
     gap: 10px;
     padding: 10px;
-    width: 60%;
+    width: auto;
+}
+
+.image {
+    max-width: 150px;
+    text-align: center;
 }
