@@ -5,14 +5,18 @@ body, .content-1, .content-2, .content-3, .content-4, .footer, .list-container, 
 }
 /**/
 
+/*Shared styles across multiple containers*/
+
 header, .content-1, .content-4 {
     padding: 10px;
 }
 
-/**/
+/*Styles for header and child element*/
 
-header /*, .content-1*/{
-    display: flex;    
+header, .content-1, footer{
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;    
 }
 
 .header-logo, .list-container {
@@ -29,9 +33,17 @@ a {
     padding: 10px;
 }
 
-
 /**/
 
+.signup-1, .image-placeholder {
+    width: 50%;
+}
+
+.image-placeholder, footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /**/
 
