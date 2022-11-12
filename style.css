@@ -1,61 +1,51 @@
-body {
-    display: flex;
-    flex-direction: column;
+/* helper code for border colors on divs*/
+body, .content-1, .content-2, .content-3, .content-4, .footer, .list-container, div, ul, a {
+    border-style: dotted;
+    border-color: red;
 }
+/**/
 
-header {
-    display: flex;
-    background-color: navy;
-    align-items: center;
-    justify-content: space-between;
-    color: white;
+header, .content-1, .content-4 {
     padding: 10px;
 }
 
-li {
-    display: inline;
+/**/
+
+header /*, .content-1*/{
+    display: flex;    
+}
+
+.header-logo, .list-container {
+    display: flex;
+    align-items: center;
+}
+
+.list-container {
+    flex: 1;
+    justify-content: end;
+}
+
+a {
     padding: 10px;
 }
 
-.content-1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: navy;
-    padding: 20px;
-}
 
-.signup-1, .image-placeholder {
-    height: 200px;
-    width: 400px;
-    color: white;
-}
+/**/
 
-.image-placeholder {
-    background-color: grey;
-    text-align: center;
-    line-height: 200px;
-}
+
+/**/
 
 .content-2 {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-.content-3 {
-    background-color: lightgray;
-    padding: 50px;
+    flex-direction: column;
+    padding: 10px;
 }
 
 .image-container {
-    display: flex; /*add flex shrink content here*/
-}
-
-.image-and-text {
-    height: auto;
-    width: 200px;   
-    margin: 10px;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px;
 }
