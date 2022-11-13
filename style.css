@@ -1,25 +1,59 @@
-/* helper code for border colors on divs*/
-body, .content-1, .content-2, .content-3, .content-4, .footer, .list-container, div, ul, a {
+/*
+/* helper code for border colors on divs
+body,
+.content-1,
+.content-2,
+.content-3,
+.content-4,
+.footer,
+.list-container,
+div,
+ul,
+a {
     border-style: dotted;
     border-color: red;
 }
-/**/
+
+*/
 
 /*Shared styles across multiple containers*/
 
-header, .content-1, .content-4 {
+body {
+    font-family: sans-serif;
+}
+
+header,
+.content-1,
+.content-4,
+footer {
     padding: 10px;
 }
 
-/*Styles for header and child element*/
-
-header, .content-1, footer{
-    display: flex;
-    background-color: #1F2937;
-    color: #F9FAF8;    
+header, 
+footer {
+    min-height: 80px;
 }
 
-.header-logo, .list-container {
+.content-1,
+.content-2,
+.content-3,
+.content-4 {
+    min-height: 150px;
+}
+
+
+/*Styles for header and child element*/
+
+header,
+.content-1,
+footer {
+    display: flex;
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header-logo,
+.list-container {
     display: flex;
     align-items: center;
     width: 50%;
@@ -36,19 +70,25 @@ a {
 
 /**/
 
-.signup-1, .image-placeholder {
+.signup-1,
+.image-placeholder {
     width: 50%;
 }
 
-.image-placeholder, footer {
+.image-placeholder,
+footer {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.image-placeholder {
+    background-color: gray;
+}
+
 /*Style for content 2*/
 
-.content-2 {
+.content-2, .content-3 {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -75,4 +115,51 @@ a {
 .image {
     max-width: 150px;
     text-align: center;
+}
+
+/*Style for content 3*/
+
+.content-3 {    
+    background-color: #e6e7eb;
+}
+
+.quote, .thor {
+    width: 60%;
+}
+
+.quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #1F2937;
+}
+
+.thor {
+    font-weight: bold;
+    text-align: end;
+}
+
+/*Style for content 4*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+
+.content-4 {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+}
+
+button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-style: solid;
+    border-color: white;
 }
